@@ -17,16 +17,9 @@ and run
 
 - python manage.py migrate --run-syncdb
 
-To active the sending of email with asynchronous tasks, install rabbitMQ or redis from command line and execute the following command
-
-- celery worker -A tramite -l info
-
-link to the rabbitmq documentation: https://www.rabbitmq.com/install-debian.html
-
-link to the celery documentation: http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html
-
 To create an user execute te comand bellow and follow the instructions
 - python manage.py createsuperuser
+
 
 Finally execute
 - python manage.py runserver
