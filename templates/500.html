@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+{% include 'inclusions/head.html' %}
+<body>
+<div class="wrapper">
+    <div class="m-error m-error-500">
+        <div class="m-error--content">
+            <div class="m-error--title"><h1 class="h1">500</h1></div>
+            <div class="m-error--desc"><h2 class="h2">Oops! Error  Interno
+                del Servidor
+                .</h2>
+                <p>Sorry, we couldn't find the page you are looking for...</p>
+                <div class="m-error--search">
+                    <a href="{% url 'index' %}" class="btn btn-block btn-rounded
+                    btn-info">Volver atrás</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'inclusions/javascript-resources.html' %}
+</body>
+</html>
